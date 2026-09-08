@@ -2,7 +2,9 @@
 
 **Session 1 · 9 September 2026**
 
-Open in Colab: `<COLAB-LINK>` (use this only if your own setup will not work)
+**If your own setup will not work:** go to colab.research.google.com, choose
+File > Upload notebook, and upload `lab0.ipynb` from this folder. Everything
+the lab needs is already installed there.
 
 ---
 

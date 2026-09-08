@@ -16,8 +16,8 @@ You need Python and a few libraries. Follow whichever route suits you.
 ### Route 1 — conda (recommended)
 
 ```bash
-git clone <REPO-URL>
-cd ma553
+git clone https://github.com/mariam-elmezouar/MA553-Fall2026.git
+cd MA553-Fall2026
 conda env create -f environment.yml
 conda activate ma553
 python check_setup.py
@@ -26,8 +26,8 @@ python check_setup.py
 ### Route 2 — pip and a virtual environment
 
 ```bash
-git clone <REPO-URL>
-cd ma553
+git clone https://github.com/mariam-elmezouar/MA553-Fall2026.git
+cd MA553-Fall2026
 python3 -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -36,8 +36,9 @@ python check_setup.py
 
 ### Route 3 — Google Colab (no installation)
 
-If neither route above works, open the lab notebook in Colab. Everything is
-already installed there. The link is at the top of each lab's README.
+If neither route above works, go to colab.research.google.com, choose
+File > Upload notebook, and upload the lab notebook from this repository.
+Everything you need is already installed there.
 
 Use this if you are stuck. Do not spend an hour fighting your laptop the
 night before class.
@@ -63,7 +64,7 @@ embarrassed about.
 ## Folder layout
 
 ```
-ma553/
+MA553-Fall2026/
 ├── README.md            this file
 ├── environment.yml      conda environment
 ├── requirements.txt     pip requirements
