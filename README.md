@@ -40,8 +40,6 @@ If neither route above works, go to colab.research.google.com, choose
 File > Upload notebook, and upload the lab notebook from this repository.
 Everything you need is already installed there.
 
-Use this if you are stuck. Do not spend an hour fighting your laptop the
-night before class.
 
 ---
 
