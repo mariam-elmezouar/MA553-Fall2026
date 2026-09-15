@@ -30,5 +30,4 @@ classifiers were trained on the training set and evaluated on the test set:
 ---
 
 *This card is a teaching artifact written for MA553. It is not a real
-publication, and the claim above is not one you should repeat outside this
-classroom. The data are real; the write-up is ours.*
+publication result.*
