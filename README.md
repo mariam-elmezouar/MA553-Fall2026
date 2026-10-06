@@ -5,7 +5,9 @@ Wednesdays 09:00–11:50, Girouard 332.
 
 Everything you need for the labs is here: the Python environment, the lab
 folders, and the data. Materials are added as the term goes on, so run
-`git pull` before each class.
+`git pull` before each class. When the environment changes, the README of the
+new lab says so; for lab 2 you need `pyarrow` (`pip install pyarrow` or
+`conda install pyarrow`), then `python check_setup.py` again.
 
 ---
 
@@ -67,7 +69,9 @@ MA553-Fall2026/
 ├── environment.yml      conda environment
 ├── requirements.txt     pip requirements
 ├── check_setup.py       run this to test your installation
-└── lab0/                Session 1 lab
+├── lab0/                Session 1 lab
+├── lab1/                Session 2 lab
+└── lab2/                Session 3 lab (run its get_data.py first; the data are not in the repo)
 ```
 
 One folder is added per lab. Each has its own README explaining what to do.

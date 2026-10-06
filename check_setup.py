@@ -14,6 +14,7 @@ REQUIRED = [
     ("pandas", "pandas"),
     ("sklearn", "scikit-learn"),
     ("matplotlib", "matplotlib"),
+    ("pyarrow", "pyarrow"),
 ]
 
 def main():
