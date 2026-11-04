@@ -15,6 +15,8 @@ REQUIRED = [
     ("sklearn", "scikit-learn"),
     ("matplotlib", "matplotlib"),
     ("pyarrow", "pyarrow"),
+    ("sentence_transformers", "sentence-transformers"),   # Lab 5
+    ("faiss", "faiss-cpu"),                               # Lab 5
 ]
 
 def main():

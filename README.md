@@ -7,7 +7,8 @@ Everything you need for the labs is here: the Python environment, the lab
 folders, and the data. Materials are added as the term goes on, so run
 `git pull` before each class. When the environment changes, the README of the
 new lab says so; for lab 2 you need `pyarrow` (`pip install pyarrow` or
-`conda install pyarrow`), then `python check_setup.py` again.
+`conda install pyarrow`), and for lab 5 you need `sentence-transformers` and
+`faiss-cpu` (see `lab5/README.md`). Then run `python check_setup.py` again.
 
 ---
 
@@ -71,7 +72,10 @@ MA553-Fall2026/
 ├── check_setup.py       run this to test your installation
 ├── lab0/                Session 1 lab
 ├── lab1/                Session 2 lab
-└── lab2/                Session 3 lab (run its get_data.py first; the data are not in the repo)
+├── lab2/                Session 3 lab (run its get_data.py first; the data are not in the repo)
+├── lab3/                Session 4 lab
+├── lab4/                Session 5 lab
+└── lab5/                Session 6 lab (new libraries; run its get_data.py first)
 ```
 
 One folder is added per lab. Each has its own README explaining what to do.
