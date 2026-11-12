@@ -9,7 +9,9 @@ Creates, next to this script:
 
 Files that are already present are not downloaded again.
 """
-import pathlib, urllib.request, zipfile
+import pathlib, ssl, urllib.request, zipfile
+
+import certifi
 
 HERE = pathlib.Path(__file__).resolve().parent
 
@@ -19,7 +21,11 @@ data.mkdir(exist_ok=True)
 if not (data / "SST-2" / "dev.tsv").exists():
     print("Downloading SST-2 (about 7 MB) ...")
     z = data / "SST-2.zip"
-    urllib.request.urlretrieve("https://dl.fbaipublicfiles.com/glue/data/SST-2.zip", z)
+    # use the certificates that come with Python packages (certifi), not the system ones,
+    # which are missing on some Mac and Windows installations
+    context = ssl.create_default_context(cafile=certifi.where())
+    with urllib.request.urlopen("https://dl.fbaipublicfiles.com/glue/data/SST-2.zip", context=context) as r:
+        z.write_bytes(r.read())
     with zipfile.ZipFile(z) as f:
         f.extractall(data)
     z.unlink()
